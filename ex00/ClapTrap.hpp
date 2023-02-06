@@ -5,6 +5,7 @@
 #ifndef CPP_MODULE_03_CLAPTRAP_HPP
 #define CPP_MODULE_03_CLAPTRAP_HPP
 #include <string>
+#include <iostream>
 
 class ClapTrap
 {

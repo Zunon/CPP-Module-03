@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+ex00/claptraps
 
 # CLion files
 .idea
