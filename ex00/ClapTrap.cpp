@@ -60,4 +60,13 @@ void	ClapTrap::takeDamage(unsigned int damage) {
 		std::cout << "ClapTrap " + name + " took " << damage << " damage!" << std::endl;
 	else
 		std::cout << "ClapTrap " + name + "'s corpse took a hit!" << std::endl;
+	health = (damage >= health) ? 0 : health - damage;
+}
+
+void	ClapTrap::beRepaired(unsigned int damage) {
+	if (health == 0)
+		std::cout << "ClapTrap " + name + " was revived with " << damage << "HP!" << std::endl;
+	else
+		std::cout << "ClapTrap " + name + " repaired itself for an additional " << damage << "HP!" << std::endl;
+	health += damage;
 }

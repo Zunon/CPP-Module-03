@@ -9,5 +9,6 @@ int	main(void) {
 	angy = ClapTrap(ClapTrap("Singularity"));
 	angy.attack("ClapTrap");
 	trappy.takeDamage(0);
+	trappy.beRepaired(42);
 	return (EXIT_SUCCESS);
 }
