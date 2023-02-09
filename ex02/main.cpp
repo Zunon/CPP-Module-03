@@ -2,6 +2,7 @@
 // Created by zunon on 2/6/23.
 //
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int	main(void) {
 	ClapTrap trappy;
@@ -14,5 +15,10 @@ int	main(void) {
 	toughGuy.guardGate();
 	toughGuy.attack("Singularity");
 	angy.takeDamage(20);
+	FragTrap niceGuy("Khalifa");
+	niceGuy.highFivesGuys();
+	niceGuy.attack("Marcos");
+	toughGuy.takeDamage(30);
+	toughGuy.beRepaired(10);
 	return (EXIT_SUCCESS);
 }

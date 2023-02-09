@@ -9,6 +9,9 @@
 class FragTrap: public ClapTrap {
 	public:
 		FragTrap (void);
+		FragTrap (std::string);
+		void	highFivesGuys (void);
+		~FragTrap (void);
 };
 
 
